@@ -1,0 +1,19 @@
+$value-bar-container: (
+  width: 200px,
+  height: 600px
+);
+
+$value-bar: (
+  width: 72px,
+  transition-timing: 1s ease-in-out,
+  border: 2px solid #c59a43,
+  gradient: linear-gradient(180deg, #c59a43 0%, #261f12 99.19%),
+  bar: (
+    start: 20px,
+    gap-y: 4px,
+    gap-x: 5px
+  ),
+  head: (
+    icon-size: 32px
+  )
+);

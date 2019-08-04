@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout B component</title>
+    <link rel="icon" href="https:www.overwolf.com/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="value-bar-container">
+        <div class="value-bar" style="--progress:90%">
+            <div class="value-bar__indicator">
+                <div class="value-bar__head">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 36 36">
+                        <linearGradient id="a" x1="18" x2="18" y1="30.89" y2="4.89"
+                            gradientTransform="matrix(1 0 0 -1 0 35.89)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#f1bc51" />
+                            <stop offset="1" stop-color="#917444" />
+                        </linearGradient>
+                        <linearGradient id="b" x1="18" x2="18" y1="8.89" y2="17.89"
+                            gradientTransform="matrix(1 0 0 -1 0 35.89)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#e6174f" />
+                            <stop offset="1" stop-color="#990f35" />
+                        </linearGradient>
+                        <linearGradient id="c" x1="18" x2="18" y1="26.89" y2="17.44"
+                            gradientTransform="matrix(1 0 0 -1 0 35.89)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#12b357" />
+                            <stop offset="1" stop-color="#0d803e" />
+                        </linearGradient>
+                        <path class="main" fill="#17181C" stroke="url(#a)" stroke-width="3"
+                            d="M3.9 16.9l-1 1.1L4 19.1l13 13 1.1 1.1 1.1-1.1 13-13 1.1-1.1-1.1-1.1-13-13-1.2-1L16.9 4l-13 12.9z" />
+
+                        <path class="value-bar-status-low" fill="url(#b)" stroke="#17181C" stroke-width="2"
+                            d="M8.3 17.3l-.7.7.7.7 9 9 .7.7.7-.7 9-9 .7-.7-.7-.7-9-9-.7-.7-.7.7-9 9z" />
+                        <path fill="#17181C" d="M8 18h20L18 8 8 18z" />
+                        <g class="value-bar-status-high">
+                            <path fill="url(#c)" d="M9 18l9-9 9 9-9 9-9-9z" />
+                            <path fill="#17181C" d="M8 18h20L18 28 8 18z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="value-bar value-bar--low" style="--progress:70%">
+            <div class="value-bar__indicator">
+                <div class="value-bar__head">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 36 36">
+                            <linearGradient id="a" x1="18" x2="18" y1="30.89" y2="4.89"
+                                gradientTransform="matrix(1 0 0 -1 0 35.89)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#f1bc51" />
+                                <stop offset="1" stop-color="#917444" />
+                            </linearGradient>
+                            <linearGradient id="b" x1="18" x2="18" y1="8.89" y2="17.89"
+                                gradientTransform="matrix(1 0 0 -1 0 35.89)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#e6174f" />
+                                <stop offset="1" stop-color="#990f35" />
+                            </linearGradient>
+                            <linearGradient id="c" x1="18" x2="18" y1="26.89" y2="17.44"
+                                gradientTransform="matrix(1 0 0 -1 0 35.89)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#12b357" />
+                                <stop offset="1" stop-color="#0d803e" />
+                            </linearGradient>
+                            <path class="main" fill="#17181C" stroke="url(#a)" stroke-width="3"
+                                d="M3.9 16.9l-1 1.1L4 19.1l13 13 1.1 1.1 1.1-1.1 13-13 1.1-1.1-1.1-1.1-13-13-1.2-1L16.9 4l-13 12.9z" />
+    
+                            <path class="value-bar-status-low" fill="url(#b)" stroke="#17181C" stroke-width="2"
+                                d="M8.3 17.3l-.7.7.7.7 9 9 .7.7.7-.7 9-9 .7-.7-.7-.7-9-9-.7-.7-.7.7-9 9z" />
+                            <path fill="#17181C" d="M8 18h20L18 8 8 18z" />
+                            <g class="value-bar-status-high">
+                                <path fill="url(#c)" d="M9 18l9-9 9 9-9 9-9-9z" />
+                                <path fill="#17181C" d="M8 18h20L18 28 8 18z" />
+                            </g>
+                        </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

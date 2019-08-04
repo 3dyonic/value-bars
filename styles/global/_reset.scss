@@ -1,0 +1,16 @@
+// GLOABAL: RESET
+// Defines reset for the global layer
+* {
+  margin: 0;
+  padding: 0;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background: $brand-dark;
+}

@@ -1,0 +1,12 @@
+// UTILS: global functions and mixins 
+
+// Function: Map Deep Get
+// - read multi level map hierarchies
+// - loop through each level maps keys
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
