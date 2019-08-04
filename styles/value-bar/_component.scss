@@ -56,13 +56,59 @@
 
   &__head {
     position: relative;
+    top: 5px;
     z-index: 1;
-    font-size: map-deep-get($value-bar, head, icon-size);
+    margin: auto;
+    width: 22px;
+    height: 22px;
 
-    .value-bar-status-high {
+    &::before,
+    &::after {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      border: 7px solid transparent;
+      width: 0;
+      height: 0;
+    }
+
+    &::before {
+      top: 4px;
+      border-top-width: 0;
+      border-bottom-color: green;
+      content: "";
+
       .value-bar--low & {
-        display: none;
+        content: none;
       }
+    }
+
+    &::after {
+      bottom: 4px;
+      border-bottom-width: 0;
+      border-top-color: red;
+
+      //turn on with toggle class
+      .value-bar--low & {
+        content: "";
+      }
+    }
+
+    &-inner,
+    &-outer {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-outer {
+      transform: rotate(45deg);
+      background-image: linear-gradient(135deg, #f1bc51 50%, #917444 90%);
+      padding: 3px;
+    }
+
+    &-inner {
+      background-color: black;
     }
   }
 }
