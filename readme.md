@@ -1,5 +1,6 @@
 # Value bar
-job interview assignment by Yonatan Lev Ari
+job interview assignment by Yonatan Lev Ari  
+[demo](https://3dyonic.github.io/value-bars/.)
 
 ## Specification
 1. Each bar can have a value between 0 to 100  
