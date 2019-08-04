@@ -2,6 +2,12 @@
 job interview assignment by Yonatan Lev Ari  
 [demo](https://3dyonic.github.io/value-bars/.)
 
+* please notice there are two versions.  
+- with inline svg (ver 1.0.0)
+- with css only (ver 1.0.1)
+- i did them both, in order to comply to the instructions.
+- will be happy to share my i prefer version 1.0 if asked.:)
+
 ## Specification
 1. Each bar can have a value between 0 to 100  
   - Bar design is changing based on it’s value:
